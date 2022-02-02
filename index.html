@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios del brujero</title>
+    <script src="script/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header id="header">
+        <h1>Toss a coin to your witcher</h1>
+    </header>
+    <main id="main">
+        <div id="main-container">
+            <div id="introduction" class="talk active">
+                <p>Soy Geralt de Rivia, brujo de la Escuela del Lobo, cazador activo de monstruos y de humanos, si pagas lo suficiente. Dime, ¿qué necesitas?</p>
+                <select name="selector" id="selector">
+                    <option disabled selected>¿Qué necesitas del brujo?</option>
+                    <option value="250" class='option'>Mata a este hipogrifo - 250 $</option>
+                    <option value="100" class='option'>Acaba con la plaga de arachas - 100 $</option>
+                    <option value="500" class='option'>Elimina a mi mayor enemigo - 500 $</option>
+                    <option value="20" class='option'>Salva a mi gato, porfa - 20 $</option>
+                </select>
+           
+            </div>
+            <div id="negotiation" class="talk">
+                <p>De acuerdo. Hablemos de un precio. Y no intentes jugármela o atente a las consecuencias.</p>
+                <form action="" method="post" id="form">
+                    <input type="text" name="price" id="price" placeholder="¿Cuánto estás dispuesto a pagar?" value="">
+                    <input type="submit" id='button' value="Negociar">
+                </form>
+            </div>
+            <div id="failed" class="talk">
+                <p>¡Rata de cloaca! ¡Sal de aquí antes de que te corte el cuello!</p>
+            </div>
+            <div id="success" class="talk">
+                <p>Un precio justo. Tendrás noticias mías pronto.</p>
+                <small>Pulsa W para ver al brujo en acción.</small>
+            </div>
+            <div id="video">
+                <iframe width="800" height="500" src="https://www.youtube.com/embed/wUK8GITi84Q?start=13" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="img" class="img">
+                <img src="assets/geralt.jpg" alt="">
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
